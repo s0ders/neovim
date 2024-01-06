@@ -8,7 +8,7 @@ This configuration is made to be used with [NvChad](https://nvchad.com).
 
 ### Preferences
 
-- Theme: `github_dark`
+- Theme: `nightfox`
 
 ### Extensions pre-installed
 
