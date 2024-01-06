@@ -59,6 +59,7 @@ local plugins = {
           "yaml",
           "sql",
           "markdown",
+          "dockerfile",
         },
       },
     },
