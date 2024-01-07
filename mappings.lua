@@ -3,7 +3,7 @@ local M = {}
 -- Disable default
 M.disabled = {
   n = {
-      ["<leader>gt"] = "",
+      ["<leader>td"] = "",
   }
 }
 
@@ -21,8 +21,10 @@ M.abc = {
 
     -- Telescope Git related
     ["<leader>gc"] = {":Telescope git_commits <CR>", "Git commits"},
-    ["<leader>gs"] = {":Telescope git_status <CR>", "Git status"},
     ["<leader>gr"] = {":Telescope git_branches <CR>", "Git branches"},
+
+    -- TODOs management
+    ["<leader>td"] = {":TodoTelescope <CR>", "TODOs"},
   },
 }
 
