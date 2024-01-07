@@ -101,6 +101,12 @@ local plugins = {
     }
   },
   {
+   "folke/trouble.nvim",
+   dependencies = { "nvim-tree/nvim-web-devicons" },
+   cmd = { "Trouble", "TroubleCLose", "TroubleToggle", "TroubleRefresh"},
+   opts = {},
+  },
+  {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
     cmd = { "TodoTrouble", "TodoTelescope" },

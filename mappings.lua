@@ -23,6 +23,9 @@ M.abc = {
     ["<leader>gc"] = {":Telescope git_commits <CR>", "Git commits"},
     ["<leader>gr"] = {":Telescope git_branches <CR>", "Git branches"},
 
+    -- Trouble management
+    ["<leader>tt"] = {":TroubleToggle <CR>", "Trouble"},
+
     -- TODOs management
     ["<leader>td"] = {":TodoTelescope <CR>", "TODOs"},
   },
