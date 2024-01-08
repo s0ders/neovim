@@ -114,4 +114,53 @@ local plugins = {
   }
 }
 
+require'nvim-web-devicons'.setup {
+  override = {
+    go = {
+      icon = "󰟓",
+      color = "#00ADD8",
+      cterm_color = "65",
+      name = "Go"
+    }
+  };
+
+  override_by_filename = {
+    ["go.mod"] = {
+      icon = "󰟓",
+      color = "#EA3E70",
+      name = "go.mod"
+    },
+    ["go.sum"] = {
+      icon = "󰟓",
+      color = "#EA3E70",
+      name = "go.sum"
+    },
+    [".gitignore"] = {
+      icon = "",
+      color = "#F1502F",
+      name = "Gitignore"
+    }
+
+  };
+
+  override_by_extension = {
+    ["pl"] = {
+      icon = "",
+      color = "#B784E3",
+      name = "Perl"
+    },
+    ["pm"] = {
+      icon = "",
+      color = "#B784E3",
+      name = "Perl"
+    },
+    ["sql"] = {
+      icon = "",
+      color = "#FFCA28",
+      name = "SQL"
+    }
+  };
+
+}
+
 return plugins
