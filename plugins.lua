@@ -139,8 +139,12 @@ require'nvim-web-devicons'.setup {
       icon = "",
       color = "#F1502F",
       name = "Gitignore"
-    }
-
+    },
+    ["Makefile"] = {
+      icon = "",
+      color = "#EF524F",
+      name = "Makefile"
+    },
   };
 
   override_by_extension = {
