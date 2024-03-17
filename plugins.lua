@@ -121,6 +121,11 @@ require'nvim-web-devicons'.setup {
       color = "#00ADD8",
       cterm_color = "65",
       name = "Go"
+    },
+    makefile = {
+      icon = "",
+      color = "#EF524F",
+      name = "Makefile"
     }
   };
 
@@ -139,11 +144,6 @@ require'nvim-web-devicons'.setup {
       icon = "",
       color = "#F1502F",
       name = "Gitignore"
-    },
-    ["Makefile"] = {
-      icon = "",
-      color = "#EF524F",
-      name = "Makefile"
     },
   };
 
