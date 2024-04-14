@@ -9,11 +9,6 @@ M.disabled = {
 
 -- Custom mappings to change indent with <Tab> instead of < and >
 M.abc = {
-  v = {
-     ["<Tab>"] = {">gv", "Increase indent"},
-     ["<S-Tab>"] = {"<gv", "Decrease indent"}
-  },
-
   n = {
     -- Windows management
     ["<leader>ww"] = {"<C-w>v", "Split window vertically"},
@@ -29,6 +24,42 @@ M.abc = {
     -- TODOs management
     ["<leader>td"] = {":TodoTelescope <CR>", "TODOs"},
   },
+}
+
+M.dap = {
+  plugin = true,
+  n = {
+    ["<leader>db"] = {
+      "<cmd> DapToggleBreakpoint <CR>",
+      "Add breakpoint at line"
+    },
+    ["<leader>dus"] = {
+      function ()
+        local widgets = require('dap.ui.widgets');
+        local sidebar = widgets.sidebar(widgets.scopes);
+        sidebar.open();
+      end,
+      "Open debugging sidebar"
+    }
+  }
+}
+
+M.dap_go = {
+  plugin = true,
+  n = {
+    ["<leader>dgt"] = {
+      function()
+        require('dap-go').debug_test()
+      end,
+      "Debug go test"
+    },
+    ["<leader>dgl"] = {
+      function()
+        require('dap-go').debug_last()
+      end,
+      "Debug last go test"
+    }
+  }
 }
 
 return M
