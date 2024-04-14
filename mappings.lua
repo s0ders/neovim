@@ -31,9 +31,21 @@ M.dap = {
   n = {
     ["<leader>db"] = {
       "<cmd> DapToggleBreakpoint <CR>",
-      "Add breakpoint at line"
+      "Dap Toggle Breakpoint"
     },
-    ["<leader>dus"] = {
+    ["<leader>dbt"] = {
+      "<cmd> DapTerminate <CR>",
+      "Dap Terminate"
+    },
+    ["<leader>dn"] = {
+      "<cmd> DapStepOver <CR>",
+      "Dap Step Over"
+    },
+    ["<leader>dr"] = {
+      ":lua require('dapui').open({reset = true})<CR>",
+      "Dap Step Over"
+    },
+    ["<leader>du"] = {
       function ()
         local widgets = require('dap.ui.widgets');
         local sidebar = widgets.sidebar(widgets.scopes);

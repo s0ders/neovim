@@ -18,12 +18,21 @@ local plugins = {
       require("core.utils").load_mappings("dap")
     end
   },
+  -- new plugins for debugging
   {
-    "leoluz/nvim-dap-go",
+    "rcarriga/nvim-dap-ui",
+    dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}
+  },
+  {
+    "TheHamsta/nvim-dap-virtual-text",
+  },
+  {
+    "dreamsofcode-io/nvim-dap-go",
     ft = "go",
     dependencies = "mfussenegger/nvim-dap",
     config = function(_, opts)
       require("dap-go").setup(opts)
+      require("dapui").setup()
       require("core.utils").load_mappings("dap_go")
     end
   },
