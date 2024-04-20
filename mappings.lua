@@ -23,6 +23,9 @@ M.abc = {
 
     -- TODOs management
     ["<leader>td"] = {":TodoTelescope <CR>", "TODOs"},
+
+    -- LSP rename
+    ["<leader>rn"] = {"<cmd>lua vim.lsp.buf.rename()<CR>", "Rename symbol"}
   },
 }
 
