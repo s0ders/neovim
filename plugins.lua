@@ -79,6 +79,7 @@ local plugins = {
         "sql",
         "markdown",
         "dockerfile",
+        "terraform",
       },
     },
   },
