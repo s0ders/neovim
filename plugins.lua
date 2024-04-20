@@ -9,6 +9,7 @@ local plugins = {
         "golines",
         "delve",
         "marksman", -- markdown
+        "terraform-ls",
       },
     },
   },
@@ -17,11 +18,6 @@ local plugins = {
     init = function()
       require("core.utils").load_mappings("dap")
     end
-  },
-  -- new plugins for debugging
-  {
-    "rcarriga/nvim-dap-ui",
-    dependencies = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}
   },
   {
     "TheHamsta/nvim-dap-virtual-text",
@@ -32,7 +28,6 @@ local plugins = {
     dependencies = "mfussenegger/nvim-dap",
     config = function(_, opts)
       require("dap-go").setup(opts)
-      require("dapui").setup()
       require("core.utils").load_mappings("dap_go")
     end
   },
