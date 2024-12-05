@@ -1,5 +1,7 @@
 # NvChad custom configuration
 
+**Having an issue?** Check what is going wrong with `:checkhealth`.
+
 This configuration is built for [NvChad](https://nvchad.com) and optimized for Go development but can be adapted to any purpose by customizing plugins.
 
 ### Prerequisites
