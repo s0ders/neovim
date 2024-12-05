@@ -7,6 +7,13 @@ This configuration is built for [NvChad](https://nvchad.com) and optimized for G
 ### Prerequisites
  - Install [Ripgrep](https://github.com/BurntSushi/ripgrep) for telescope
  - Install a [Nerd Font](https://www.nerdfonts.com/font-downloads) for icons
+ - Install `gcc` or another C compiler if not already present
+
+### Install
+
+```bash
+git clone https://github.com/s0ders/nvchad.git $NVIM_CONFIG_DIR/lua/custom/
+```
 
 ### Preferences
 
